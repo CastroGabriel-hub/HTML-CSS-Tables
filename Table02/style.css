@@ -1,0 +1,76 @@
+ *, *::before, *::after{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:#474650;
+    font-size: 0.9rem;
+    background-color:aliceblue;
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px rgb(158, 158, 158);
+    background-color: white;
+    text-align: left;
+    overflow:hidden;
+}
+
+table thead{
+    box-shadow: 0 5px 10px rgb(158, 158, 158);
+}
+
+table thead th{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+table td{
+    padding: 1rem 2rem;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(24, 78, 255);
+}
+
+.status{
+    border-radius: 4px;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    text-align: center;
+
+}
+
+.status-pending{
+    background-color: #e9e092;
+    color: #9c7300;
+}
+
+.status-paid{
+    background-color: #89e090;
+    color: #00830b;
+}
+
+.status-unpaid{
+    background-color: #eca49f;
+    color: #921504;
+}
+
+.amount{
+    text-align: right;
+}
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}
